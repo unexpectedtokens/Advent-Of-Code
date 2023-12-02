@@ -33,7 +33,6 @@ func getSumOfLine(line string) int {
 	var second int
 	var index int
 	for !firstFound {
-		fmt.Println(line, index, first)
 		curChar := splitStr[index]
 		potNum, err := strconv.Atoi(curChar)
 		if err == nil {
@@ -57,6 +56,7 @@ func getSumOfLine(line string) int {
 			if index == len(splitStr) {
 				first = 0
 				second = 0
+				firstFound = true
 			}
 		}
 	}
@@ -89,5 +89,4 @@ func main() {
 
 	}
 
-	fmt.Println(total)
 }
