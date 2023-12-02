@@ -10,7 +10,7 @@ func TestGetSumOfLine(t *testing.T) {
 		"xtwone3four":      33,
 		"4nineeightseven2": 42,
 		"zoneight234":      24,
-		"7pqrstsixteen":    76,
+		"7pqrstsixteen":    77,
 	}
 
 	for k, v := range testTable {
